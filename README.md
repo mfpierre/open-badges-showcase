@@ -4,7 +4,7 @@ A web component to display open badges
 
 ## Demo
 
-[Check it live!](http://my-user.github.io/my-repo)
+[Check it live!](http://mfpierre.github.io/open-badges-showcase/)
 
 ## Usage
 
