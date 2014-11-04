@@ -1,6 +1,6 @@
 # &lt;open-badges-showcase&gt;
 
-A web component to display open badges
+A web component to display open badges. Built using the awesome [Polymer Boilerplate](https://github.com/webcomponents/polymer-boilerplate).
 
 ## Demo
 
