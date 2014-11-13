@@ -1,10 +1,21 @@
 {
-  "name": "my-repo",
-  "version": "0.0.0",
-  "description": "My awesome Custom Element",
+  "name": "open-badges-showcase",
+  "version": "0.0.1",
+  "description": "A web component to display open badges",
   "license": "MIT",
   "main": "dist/open-badges-showcase.html",
+  "authors": [
+    "Pierre Margueritte"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mfpierre/open-badges-showcase.git"
+  },
   "keywords": [
+    "open-badges",
+    "badges",
+    "backpack",
+    "mozilla",
     "polymer",
     "web-components"
   ],
