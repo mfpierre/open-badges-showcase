@@ -1,30 +1,6 @@
 # &lt;open-badges-showcase&gt;
 
-A web component to display open badges. Built using the awesome [Polymer Boilerplate](https://github.com/webcomponents/polymer-boilerplate).
-
-## Demo
-
-[Check it live!](http://mfpierre.github.io/open-badges-showcase/)
-
-## Usage
-
-1. Import Web Components' polyfill:
-
-    ```html
-    <script src="bower_components/platform/platform.js"></script>
-    ```
-
-2. Import Custom Element:
-
-    ```html
-    <link rel="import" href="bower_components/open-badges-showcase/dist/open-badges-showcase.html">
-    ```
-
-3. Start using it!
-
-    ```html
-    <open-badges-showcase user="39965" group="40053" width="100"></open-badges-showcase>
-    ```
+A web component to display open badges.
 
 ## Options
 
@@ -37,37 +13,18 @@ Attribute     | Options     | Default      | Description
 
 ## Development
 
-In order to run it locally you'll need to fetch some dependencies and a basic server setup.
+If you wish to work on your element in isolation, we recommend that you use
+[Polyserve](https://github.com/PolymerLabs/polyserve) to keep your element's
+bower dependencies in line. You can install it via:
 
-* Install [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/):
+    npm install -g polyserve
 
-    ```sh
-    $ [sudo] npm install -g bower grunt-cli
-    ```
+And you can run it via:
 
-* Install local dependencies:
+    polyserve
 
-    ```sh
-    $ bower install && npm install
-    ```
-
-* To test your project, start the development server and open `http://localhost:8000`.
-
-    ```sh
-    $ grunt server
-    ```
-
-* To build the distribution files before releasing a new version.
-
-    ```sh
-    $ grunt build
-    ```
-
-* To provide a live demo, send everything to `gh-pages` branch.
-
-    ```sh
-    $ grunt deploy
-    ```
+Once running, you can preview your element at
+`http://localhost:8080/components/open-badges-showcase/`
 
 ## Contributing
 

@@ -1,0 +1,52 @@
+<!-- Import Polymer -->
+<link rel="import" href="../polymer/polymer.html">
+
+<!-- Import Components -->
+<link rel="import" href="../iron-ajax/iron-ajax.html">
+
+<!--
+A web component to display open badges.
+
+Example:
+
+    <open-badges-showcase user="39965" group="40053" width="100"></open-badges-showcase>
+
+@demo
+-->
+<dom-module id="open-badges-showcase">
+    <template>
+        <iron-ajax url="{{url}}" auto last-response="{{resp}}"></iron-ajax>
+        <template is="dom-repeat" items="{{resp.badges}}">
+            <img src="{{item.imageUrl}}" alt="{{item.assertion.badge.name}}" width="{{width}}">
+        </template>
+    </template>
+
+    <script>
+        Polymer({
+            is: 'open-badges-showcase',
+            properties: {
+                user: {
+                    type: Number,
+                    value: 39965
+                },
+                group: {
+                    type: Number,
+                    value: 40053
+                },
+                width: {
+                    type: Number,
+                    value: function() {
+                        return 100;
+                    }
+                },
+                url: {
+                    type: String,
+                    computed: 'computeUrl(user, group)'
+                }
+            },
+            computeUrl: function(user, group) {
+              return 'http://backpack.openbadges.org/displayer/' + user + '/group/' + group + '.json';
+            }
+        });
+    </script>
+</dom-module>

@@ -1,9 +1,9 @@
 {
   "name": "open-badges-showcase",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A web component to display open badges",
   "license": "MIT",
-  "main": "dist/open-badges-showcase.html",
+  "main": "open-badges-showcase.html",
   "authors": [
     "Pierre Margueritte"
   ],
@@ -12,20 +12,24 @@
     "url": "git://github.com/mfpierre/open-badges-showcase.git"
   },
   "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
     "open-badges",
     "badges",
     "backpack",
-    "mozilla",
-    "polymer",
-    "web-components"
+    "mozilla"
   ],
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components"
+    "/.*",
+    "/test/",
+    "/demo/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^0.4.1",
-    "core-elements": "Polymer/core-elements#~0.4.2"
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
   }
 }
